@@ -5,7 +5,7 @@
 <table>
   <tr>
     <td style="vertical-align: middle;">
-      <h1>🔥 The Phoenix Agency</h1>
+      <h1>🔥 The Phoenix Project Agency</h1>
     </td>
     <td style="vertical-align: middle;">
       <img src="https://media.giphy.com/media/2A75RyXVzzSI2bx4Gj/giphy.gif" width="120" alt="Phoenix on fire"/>
@@ -18,7 +18,7 @@
 ## 🚀 WebAgency Spécialisée en IA, NoCode, Automatisation & Cybersécurité
 ### Innovation | Intelligence Artificielle | Automatisation | NoCode | Cybersécurité
 
-Bienvenue chez **The Phoenix Agency** ! 🦅  
+Bienvenue chez **The Phoenix Project Agency** ! 🦅  
 Comme le Phoenix qui renaît de ses cendres, nous transformons votre présence digitale grâce à l'innovation, l'IA et l'automatisation.
 
 ---
