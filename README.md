@@ -1,4 +1,4 @@
-# 🥇 **Merci de visiter ! N'oubliez pas de mettre une ⭐ étoile ⭐ et de nous suivre 🤩**
+# 🥇 **Merci de visiter notre page de profil ! <br>N'oubliez pas de mettre une ⭐ étoile ⭐ et de nous suivre 🤩**
 
 <br><br>
 
@@ -16,10 +16,11 @@
 **<span style="color:#FF5733;"><b>Votre partenaire digital pour renaître dans l'ère de l'IA !</b></span>**
 
 ## 🚀 WebAgency Spécialisée en IA, NoCode, Automatisation & Cybersécurité
-### Innovation | Intelligence Artificielle | Automatisation | NoCode | Cybersécurité
+### | Agilité | Innovation | Intelligence Artificielle | Automatisation | NoCode | Cybersécurité |
 
 Bienvenue chez **The Phoenix Project Agency** ! 🦅  
 Comme le Phoenix qui renaît de ses cendres, nous transformons votre présence digitale grâce à l'innovation, l'IA et l'automatisation.
+
 
 ---
 
@@ -38,12 +39,20 @@ Comme le Phoenix qui renaît de ses cendres, nous transformons votre présence d
 
 ### 🚀 Nos Expertises & Technologies
 
+![Innovation](https://img.shields.io/badge/Innovation-FFDC00?style=for-the-badge&logo=sparkles&logoColor=black)
+![Business Analysis](https://img.shields.io/badge/Business%20Analysis-6A4C93?style=for-the-badge&logo=googleanalytics&logoColor=white)
+![Project Management](https://img.shields.io/badge/Project%20Management-FF851B?style=for-the-badge&logo=asana&logoColor=white)
+
 ![Artificial Intelligence](https://img.shields.io/badge/Artificial%20Intelligence-00BFFF?style=for-the-badge&logo=openai&logoColor=white)
-![Machine Learning](https://img.shields.io/badge/Machine%20Learning-FF6F61?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![NoCode](https://img.shields.io/badge/NoCode-7B68EE?style=for-the-badge&logo=zapier&logoColor=white)
 ![Automation](https://img.shields.io/badge/Automation-FFD700?style=for-the-badge&logo=githubactions&logoColor=black)
+
 ![Cybersecurity](https://img.shields.io/badge/Cybersecurity-FF4136?style=for-the-badge&logo=hackthebox&logoColor=white)
+![Data Analytics](https://img.shields.io/badge/Analytics-0074D9?style=for-the-badge&logo=chartdotjs&logoColor=white)
 ![Web Development](https://img.shields.io/badge/Web%20Development-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+
+
+
 
 ---
 
@@ -158,14 +167,20 @@ Comme le Phoenix qui renaît de ses cendres, nous transformons votre présence d
 
 ### 🌐 Nous Trouver
 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/phoenixproject-ai/)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/phoenixprojectai/)
 [![Website](https://img.shields.io/badge/Website-FF7139?style=for-the-badge&logo=firefox&logoColor=white)](https://thephoenixagency.github.io)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/the-phoenix-agency)
+
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ThePhoenixAgency)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact@thephoenixagency.com)
+[![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discordapp.com/users/687037223673004092)
+
+[![GitHub / Organization](https://avatars.githubusercontent.com/u/210052573?s=64&v=4)](https://github.com/ThePhoenixAgency)
 
 ---
 
 ## 📞 **Contactez-nous pour votre transformation digitale :**
+
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact@phonproject.onmicrosoft.com)
 
 💬 **Demandez-nous pour :**  
 - Solutions d'automatisation sur mesure
@@ -173,6 +188,7 @@ Comme le Phoenix qui renaît de ses cendres, nous transformons votre présence d
 - Consulting en cybersécurité  
 - Formation et accompagnement NoCode  
 - Transformation digitale complète
+- Agilité, accompagnement au changement
 
 📧 **Contact :**  
 Contactez-nous via nos réseaux ou créez une issue GitHub !
