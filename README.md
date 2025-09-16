@@ -180,7 +180,7 @@ Comme le Phoenix qui renaît de ses cendres, nous transformons votre présence d
 
 ## 📞 **Contactez-nous pour votre transformation digitale :**
 
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact@phonproject.onmicrosoft.com)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact@phonxproject.onmicrosoft.com)
 
 💬 **Demandez-nous pour :**  
 - Solutions d'automatisation sur mesure
