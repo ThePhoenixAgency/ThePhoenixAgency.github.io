@@ -169,12 +169,12 @@ Comme le Phoenix qui renaît de ses cendres, nous transformons votre présence d
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/phoenixproject-ai/)
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/phoenixprojectai/)
-[![Website](https://img.shields.io/badge/Website-FF7139?style=for-the-badge&logo=firefox&logoColor=white)](https://thephoenixagency.github.io)
+[![Website](https://img.shields.io/badge/Website-FF7139?style=for-the-badge&logo=firefox&logoColor=white)](https://github.com/ThePhoenixAgency)
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ThePhoenixAgency)
 [![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discordapp.com/users/687037223673004092)
 
-[![GitHub / Organization](https://avatars.githubusercontent.com/u/210052573?s=64&v=4)](https://github.com/ThePhoenixAgency)
+[![GitHub / Organization](https://avatars.githubusercontent.com/u/210052573?s=64&v=4)](thephoenixagency.github.io)
 
 ---
 
@@ -191,7 +191,7 @@ Comme le Phoenix qui renaît de ses cendres, nous transformons votre présence d
 - Agilité, accompagnement au changement
 
 📧 **Contact :**  
-Contactez-nous via nos réseaux ou créez une issue GitHub !
+Contactez-nous via nos réseaux, notre mail!
 
 ---
 
