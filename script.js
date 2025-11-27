@@ -393,3 +393,61 @@ if ('serviceWorker' in navigator) {
             });
     });
 }
+
+// Language selector
+const translations = {
+    en: {
+        'hero-title': 'Transform your business with Artificial Intelligence',
+        'hero-desc': 'AI, NoCode, Automation and Cybersecurity specialists. We bring your digital projects to life with custom solutions.',
+        'nav-home': 'Home',
+        'nav-services': 'Services',
+        'nav-expertise': 'Expertise',
+        'nav-projects': 'Projects',
+        'nav-contact': 'Contact',
+        'cta-start': 'Start your project',
+        'cta-discover': 'Discover our services'
+    },
+    fr: {
+        'hero-title': "Transformez votre entreprise avec l'Intelligence Artificielle",
+        'hero-desc': 'Spécialistes en IA, NoCode, Automatisation et Cybersécurité. Nous donnons vie à vos projets digitaux avec des solutions sur mesure.',
+        'nav-home': 'Accueil',
+        'nav-services': 'Services',
+        'nav-expertise': 'Expertise',
+        'nav-projects': 'Projets',
+        'nav-contact': 'Contact',
+        'cta-start': 'Démarrer votre projet',
+        'cta-discover': 'Découvrir nos services'
+    }
+};
+
+function initLanguageSelector() {
+    const langFr = document.getElementById('lang-fr');
+    const langEn = document.getElementById('lang-en');
+    
+    if (langFr && langEn) {
+        langFr.addEventListener('click', () => setLanguage('fr'));
+        langEn.addEventListener('click', () => setLanguage('en'));
+    }
+}
+
+function setLanguage(lang) {
+    const langFr = document.getElementById('lang-fr');
+    const langEn = document.getElementById('lang-en');
+    
+    if (lang === 'fr') {
+        langFr.classList.add('active');
+        langEn.classList.remove('active');
+        document.documentElement.lang = 'fr';
+    } else {
+        langEn.classList.add('active');
+        langFr.classList.remove('active');
+        document.documentElement.lang = 'en';
+    }
+    localStorage.setItem('lang', lang);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    initLanguageSelector();
+    const savedLang = localStorage.getItem('lang') || 'fr';
+    setLanguage(savedLang);
+});
