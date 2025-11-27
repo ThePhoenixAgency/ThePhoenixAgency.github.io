@@ -875,3 +875,36 @@ section {
     cursor: not-allowed;
     transform: none !important;
 }
+
+
+/* Language selector */
+.lang-selector {
+    display: flex;
+    gap: 0.25rem;
+    margin-left: 1rem;
+}
+
+.lang-btn {
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--dark-color);
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.lang-btn:hover,
+.lang-btn.active {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+@media (max-width: 768px) {
+    .lang-selector {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+}
