@@ -291,8 +291,7 @@ a {
     gap: 0.5rem;
     text-align: center;
     min-width: 140px;
-    animation: float 6s ease-in-out infinite;
-}
+    animation: float 20s ease-in-out infinite;}
 
 .floating-card i {
     font-size: 2rem;
@@ -330,7 +329,7 @@ a {
 
 @keyframes float {
     0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
+    50% { transform: translateY(-8px); }
 }
 
 .scroll-indicator {
