@@ -47,7 +47,8 @@ The Phoenix Agency website is a GitHub Pages static website repository that auto
 - **Playwright Testing**: Use browser automation tools to test user workflows
 
 ### End-to-End Testing with Playwright
-- Start local server: `python3 -m http.server 8081 &`
+- Start local server: `python3 -m http.server 8081`
+  - (If you need to run Playwright in parallel, you may start the server in the background with `python3 -m http.server 8081 &`, but remember to stop it with `kill %1` or `pkill -f "http.server 8081"` when finished.)
 - Navigate to pages: Use playwright-browser_navigate to http://localhost:8081/filename.html
 - Take screenshots: Use playwright-browser_take_screenshot to verify visual output
 - Test interactions: Click elements, fill forms, verify functionality
