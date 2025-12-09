@@ -41,7 +41,7 @@ The Phoenix Agency website is a GitHub Pages static website repository that auto
 - **HTML Validation**: `npm install --no-save html-validate && npx html-validate *.html` (takes ~10 seconds)
 - **JavaScript Linting**: 
   - Install: `npm install --no-save eslint` (takes ~15 seconds)
-  - Create config: `echo 'export default [{ rules: { "no-unused-vars": "error", "no-console": "warn" } }];' > eslint.config.js`
+  - Create config: `echo 'export default [{ rules: { "no-unused-vars": "error", "no-console": "warn" } }];' > eslint.config.mjs`
   - Run: `npx eslint *.js`
 - **CSS Validation**: Use online validators or install css-lint tools as needed
 - **Playwright Testing**: Use browser automation tools to test user workflows
