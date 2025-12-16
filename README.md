@@ -1,7 +1,6 @@
 # 🥇 **Merci de visiter notre page de profil ! <br>N'oubliez pas de mettre une ⭐ étoile ⭐ et de nous suivre 🤩**
 
 <br><br>
-
 <table>
   <tr>
     <td style="vertical-align: middle;">
@@ -9,6 +8,9 @@
     </td>
     <td style="vertical-align: middle;">
       <img src="https://media.giphy.com/media/2A75RyXVzzSI2bx4Gj/giphy.gif" width="120" alt="Phoenix on fire"/>
+    </td>
+    <td>
+      <img src="https://tryhackme-badges.s3.amazonaws.com/EthanThePhoenix.png" alt="Your Image Badge" />
     </td>
   </tr>
 </table>
@@ -20,7 +22,6 @@
 
 Bienvenue chez **The Phoenix Project Agency** ! 🦅  
 Comme le Phoenix qui renaît de ses cendres, nous transformons votre présence digitale grâce à l'innovation, l'IA et l'automatisation.
-
 
 ---
 
@@ -50,9 +51,6 @@ Comme le Phoenix qui renaît de ses cendres, nous transformons votre présence d
 ![Cybersecurity](https://img.shields.io/badge/Cybersecurity-FF4136?style=for-the-badge&logo=hackthebox&logoColor=white)
 ![Data Analytics](https://img.shields.io/badge/Analytics-0074D9?style=for-the-badge&logo=chartdotjs&logoColor=white)
 ![Web Development](https://img.shields.io/badge/Web%20Development-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-
-
-
 
 ---
 
