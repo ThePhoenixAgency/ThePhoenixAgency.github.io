@@ -1,0 +1,65 @@
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+
+title: "The Phoenix Project Agency - WebAgency IA & Automatisation"
+description: "Spécialistes en Intelligence Artificielle, NoCode, Automatisation et Cybersécurité. Votre partenaire digital pour renaître dans l'ère de l'IA."
+url: "https://thephoenixagency.github.io"
+baseurl: ""
+
+# SEO
+author: "The Phoenix Project Agency"
+instagram:
+  username: "@phoenixprojectai"
+  card: summary_large_image
+social:
+  name: The Phoenix Agency
+  links:
+    - https://github.com/ThePhoenixAgency
+    - https://www.linkedin.com/company/phoenixproject-ai/
+    - https://www.instagram.com/phoenixprojectai/
+    - https://www.instagram.com/phoenixguadiantools/
+    - http://tinyurl.com/EthanThePhoenix
+    - https://ethanbernier.link/
+
+# Configuration
+markdown: kramdown
+highlighter: rouge
+timezone: Europe/Paris
+lang: fr
+
+# Exclure des fichiers du build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .bundle
+  - .sass-cache
+  - .jekyll-cache
+  - .jekyll-metadata
+  
+# Inclure des fichiers
+include:
+  - _pages
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
