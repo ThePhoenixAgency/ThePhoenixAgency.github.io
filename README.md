@@ -131,7 +131,7 @@ Comme le Phoenix qui renaît de ses cendres, nous transformons votre présence d
 | Repository | Description | Language | Stars | Status |
 |------------|-------------|----------|-------|--------|
 | [🐍 py-stats-toolkit](https://github.com/ThePhoenixAgency/py-stats-toolkit) | Bibliothèque de fonctions statistiques, algo, Machine Learning, génétique | ![Python](https://img.shields.io/badge/Python-3670A0?style=flat&logo=python&logoColor=ffdd54) | ![Stars](https://img.shields.io/github/stars/ThePhoenixAgency/py-stats-toolkit?style=flat) | ![Status](https://img.shields.io/badge/Status-Active-success) |
-| [🌐 ThePhoenixAgency.github.io](https://github.com/ThePhoenixAgency/ThePhoenixAgency.github.io) | Site officiel The Phoenix Agency | ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) | ![Stars](https://img.shields.io/github/stars/ThePhoenixAgency/ThePhoenixAgency.github.io?style=flat) | ![Status](https://img.shields.io/badge/Status-Active-success) |
+| [🌐 https://github.com/ThePhoenixAgency/ThePhoenixAgency.github.io](https://ethanthephoenix38.github.io/phoenixproject-website/) | Site officiel The Phoenix Agency | ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) | ![Stars](https://img.shields.io/github/stars/ThePhoenixAgency/ThePhoenixAgency.github.io?style=flat) | ![Status](https://img.shields.io/badge/Status-Active-success) |
 
 ---
 
