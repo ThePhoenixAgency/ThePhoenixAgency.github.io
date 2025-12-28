@@ -673,6 +673,23 @@
 
   .tab-item {
     padding: 0.4rem 0.8rem;
+ 
+
+  /* Fix pour le menu templates sur mobile */
+  .template-btn {
+    position: relative;
     font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+    min-width: auto;
+  }
+
+  .template-selector {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 1000;
+    min-width: 150px;
+    max-width: 200px;
+  }   font-size: 0.85rem;
   }
 }
