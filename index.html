@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="The Phoenix Agency - Experts en Intelligence Artificielle, NoCode, Automatisation et Cybersécurité. Solutions sur mesure pour transformer votre entreprise avec l'IA. Développement chatbots, Machine Learning, GitHub Actions, n8n, audits de sécurité.">
+<meta name="keywords" content="intelligence artificielle, IA, AI, machine learning, chatbot, agents intelligents, OpenAI, Claude AI, Cursor, VS Code, MCP, Autogravity, automation, automatisation, NoCode, n8n, Make, Airtable, Notion, cybersécurité, cybersecurity, pentesting, RGPD, GDPR, business analyse, CBAP, Python, JavaScript, TypeScript, React, Vue.js, PyTorch, LangChain, Docker, Podman, Kubernetes, containers, AWS, Azure, GitHub Actions, CI/CD, développement web, transformation digitale, consultant IA, solutions IA, API IA, analyse de données, sécurité informatique, REST API, GraphQL">
+<meta name="author" content="The Phoenix Agency">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="googlebot" content="index, follow">
+<link rel="canonical" href="https://ethanthePhoenix38.github.io/phoenixproject-website/">
+<link rel="sitemap" type="application/xml" href="sitemap.xml">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ethanthePhoenix38.github.io/phoenixproject-website/">
+<meta property="og:title" content="The Phoenix Agency - Intelligence Artificielle, NoCode, Automatisation & Cybersécurité">
+<meta property="og:description" content="Transformez votre entreprise avec l'IA. Experts en développement chatbots, Machine Learning, automatisation et cybersécurité. Solutions sur mesure pour votre transformation digitale.">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:locale:alternate" content="en_US">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://ethanthePhoenix38.github.io/phoenixproject-website/">
+<meta name="twitter:title" content="The Phoenix Agency - IA, NoCode, Automatisation & Cybersécurité">
+<meta name="twitter:description" content="Experts en Intelligence Artificielle et transformation digitale. Solutions NoCode, automatisation et cybersécurité pour votre entreprise.">
+
+<!-- Security Headers -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://formspree.io; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://formspree.io https://ipapi.co; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://formspree.io;">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="X-Frame-Options" content="DENY">
+<meta http-equiv="X-XSS-Protection" content="1; mode=block">
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+<meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+
+<title>The Phoenix Agency - Intelligence Artificielle, NoCode, Automatisation & Cybersécurité</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="templates.css">
+<link rel="stylesheet" href="chatbot.css">
+<style>
+:root{--primary:#667eea;--secondary:#764ba2;--accent:#ff6b35;--dark:#1a202c;--light:#f7fafc;--text:#2d3748}*{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;color:var(--text);line-height:1.6;overflow-x:hidden}@keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}.service-card,.stat,.btn{animation:fadeIn 0.6s ease-out}.service-card:hover,.btn:hover{animation:pulse 0.3s}@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}header{animation:slideDown 0.5s ease-out}@keyframes slideDown{from{transform:translateY(-100%)}to{transform:translateY(0)}}.section{background:linear-gradient(135deg,rgba(102,126,234,0.05),rgba(118,75,162,0.05))}#expertise{background:linear-gradient(135deg,rgba(255,107,53,0.08),rgba(102,126,234,0.08))!important}
+
+header{background:white;box-shadow:0 2px 10px rgba(0,0,0,0.1);position:sticky;top:0;z-index:1000}nav{max-width:1200px;margin:0 auto;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}.nav-links{display:flex;gap:0.5rem;align-items:center}.mobile-menu-btn{display:none;background:none;border:none;font-size:1.5rem;cursor:pointer;padding:0.5rem;color:var(--text)}nav a{text-decoration:none;color:var(--text);font-weight:500;padding:0.5rem 1rem;transition:all 0.3s ease;border-radius:8px;position:relative;white-space:nowrap}nav a:hover{color:var(--primary);background:rgba(102,126,234,0.1)}nav a:active{background:rgba(102,126,234,0.2);transform:scale(0.95)}nav a:focus{outline:2px solid var(--primary);outline-offset:2px}.logo{font-size:1.5rem;font-weight:bold;color:var(--primary);cursor:pointer;transition:transform 0.3s}.logo:hover{transform:scale(1.05)}
+
+/* Boutons langue et thème dans header */
+.header-controls{display:flex;gap:0.5rem;align-items:center}
+.header-btn{padding:0.4rem 0.75rem;font-size:1.2rem;font-weight:400;background:rgba(102,126,234,0.1);color:var(--text);border:1px solid rgba(102,126,234,0.2);border-radius:8px;cursor:pointer;transition:all 0.3s ease;min-width:40px;height:40px;display:flex;align-items:center;justify-content:center}
+.header-btn:hover{background:rgba(102,126,234,0.2);transform:translateY(-2px);border-color:var(--primary)}
+
+/* Bouton retour en haut */
+#backToTop{position:fixed;bottom:30px;right:30px;z-index:2000;padding:1rem;background:var(--primary);color:white;border:none;border-radius:50%;width:50px;height:50px;font-size:1.5rem;cursor:pointer;box-shadow:0 4px 15px rgba(0,0,0,0.2);transition:all 0.3s ease;opacity:0;visibility:hidden}
+#backToTop.visible{opacity:1;visibility:visible}
+#backToTop:hover{background:var(--secondary);transform:translateY(-5px);box-shadow:0 6px 20px rgba(0,0,0,0.3)}
+
+.hero{background:linear-gradient(135deg,var(--primary),var(--secondary));color:white;padding:6rem 2rem 4rem;text-align:center}h1{font-size:clamp(2rem,5vw,3.5rem);margin-bottom:1rem;font-weight:800}h2{font-size:clamp(1.5rem,4vw,2.5rem);margin-bottom:2rem}h3{font-size:clamp(1.2rem,3vw,1.8rem);margin-bottom:1rem}.subtitle{font-size:clamp(1rem,2.5vw,1.3rem);opacity:0.95;margin-bottom:2rem}.stats{display:flex;justify-content:center;gap:3rem;margin-top:3rem;flex-wrap:wrap}.stat{text-align:center}.stat-num{font-size:3rem;font-weight:bold;color:var(--accent)}.stat-label{font-size:0.9rem;opacity:0.9}.cta-buttons{display:flex;gap:1rem;justify-content:center;margin-top:2rem;flex-wrap:wrap}.btn{padding:1rem 2rem;border-radius:50px;font-weight:600;text-decoration:none;transition:all 0.3s;display:inline-block;border:none;cursor:pointer;font-size:1rem}.btn-primary{background:var(--accent);color:white}.btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 20px rgba(255,107,53,0.3)}.btn-secondary{background:transparent;color:white;border:2px solid white}.btn-secondary:hover{background:white;color:var(--primary)}.section{max-width:1200px;margin:0 auto;padding:4rem 2rem}.section-title{text-align:center;margin-bottom:3rem}.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;margin-top:3rem}.service-card{background:white;padding:2rem;border-radius:20px;box-shadow:0 5px 15px rgba(0,0,0,0.1);transition:transform 0.3s}.service-card:hover{transform:translateY(-5px)}.service-icon{font-size:3rem;margin-bottom:1rem}.service-list{list-style:none;padding:0}.service-list li{padding:0.5rem 0;padding-left:1.5rem;position:relative}.service-list li:before{content:'✓';position:absolute;left:0;color:var(--accent);font-weight:bold}.tech-stack{display:flex;flex-wrap:wrap;gap:0.75rem;justify-content:center;margin-top:2rem}.tech-badge{background:var(--light);padding:0.4rem 0.8rem;border-radius:16px;font-size:0.8rem;color:var(--text);border:1px solid #e2e8f0}.contact-form{max-width:600px;margin:0 auto;background:white;padding:2rem;border-radius:20px;box-shadow:0 5px 15px rgba(0,0,0,0.1)}.form-group{margin-bottom:1.5rem}.form-group label{display:block;margin-bottom:0.5rem;font-weight:600}.form-group input,.form-group textarea,.form-group select{width:100%;padding:0.75rem;border:2px solid #e2e8f0;border-radius:10px;font-size:1rem;font-family:inherit}.form-group textarea{min-height:120px;resize:vertical}footer{background:var(--dark);color:white;padding:3rem 2rem;text-align:center}.footer-content{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;text-align:left}.footer-section h4{margin-bottom:1rem}.footer-section a{color:white;text-decoration:none;display:block;padding:0.3rem 0;opacity:0.8}.footer-section a:hover{opacity:1}@media(max-width:768px){.mobile-menu-btn{display:block}.nav-links{display:none;width:100%;flex-direction:column;order:4}.nav-links.active{display:flex}.header-controls{order:3}nav{justify-content:space-between}.services{grid-template-columns:1fr}.stats{flex-direction:column;gap:2rem}.cta-buttons{flex-direction:column;width:100%}.btn{width:100%}}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<a href="#home" class="logo">The Phoenix Agency</a>
+<button id="mobileMenuBtn" class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu">☰</button>
+<div class="nav-links" id="navLinks">
+<a href="#home" data-i18n="nav.home">Accueil</a>
+<a href="#services" data-i18n="nav.services">Services</a>
+<a href="#expertise" data-i18n="nav.expertise">Expertise</a>
+<a href="#contact" data-i18n="nav.contact">Contact</a>
+</div>
+<div class="header-controls">
+<button id="themeBtn" class="header-btn" onclick="toggleThemeBtn()" aria-label="Toggle theme">🌙</button>
+<button id="langBtn" class="header-btn" onclick="toggleLanguage()" aria-label="Switch language">🇬🇧</button>
+</div>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<div>
+<p class="subtitle" data-i18n="hero.subtitle1">Votre Renaissance Numérique Commence Ici</p>
+<h1 data-i18n="hero.title">Transformez votre entreprise avec l'Intelligence Artificielle</h1>
+<p class="subtitle" data-i18n="hero.subtitle2">Spécialistes en IA, NoCode, Automatisation & Cybersécurité. Nous donnons vie à vos projets numériques avec des solutions sur mesure.</p>
+<div class="stats">
+<div class="stat">
+<div class="stat-num" data-i18n="hero.stat1.number">65%</div>
+<div class="stat-label" data-i18n="hero.stat1.label">adoptent l'IA générative</div>
+</div>
+<div class="stat">
+<div class="stat-num" data-i18n="hero.stat2.number">+40%</div>
+<div class="stat-label" data-i18n="hero.stat2.label">de gain de productivité</div>
+</div>
+<div class="stat">
+<div class="stat-num" data-i18n="hero.stat3.number">22%</div>
+<div class="stat-label" data-i18n="hero.stat3.label">de réduction des coûts</div>
+</div>
+<div class="stat">
+<div class="stat-num" data-i18n="hero.stat4.number">24/7</div>
+<div class="stat-label" data-i18n="hero.stat4.label">disponibilité continue</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="services">
+<h2 class="section-title" data-i18n="services.title">Nos Services</h2>
+<p style="text-align:center;margin-bottom:2rem" data-i18n="services.subtitle">Des solutions innovantes pour propulser votre entreprise vers le futur</p>
+<div class="services">
+<div class="service-card" id="service-ai">
+<h3 data-i18n="services.ai.title">Intelligence Artificielle</h3>
+<p data-i18n="services.ai.description">Développement de chatbots, analyse de données Machine Learning, et intégration d'API IA avancées.</p>
+<ul class="service-list">
+<li data-i18n="services.ai.list.0">Chatbots & Assistants IA</li>
+<li data-i18n="services.ai.list.1">Machine Learning & Analytique</li>
+<li data-i18n="services.ai.list.2">OpenAI, Cursor, Comet</li>
+<li data-i18n="services.ai.list.3">Programmation assistée par IA</li>
+</ul>
+</div>
+
+<div class="service-card" id="service-nocode">
+<h3 data-i18n="services.nocode.title">Solutions NoCode</h3>
+<p data-i18n="services.nocode.description">Création rapide d'applications web, automatisations intelligentes et workflows personnalisés.</p>
+<ul class="service-list">
+<li data-i18n="services.nocode.list.0">Applications Web Rapides</li>
+<li data-i18n="services.nocode.list.1">n8n, Make</li>
+<li data-i18n="services.nocode.list.2">Airtable, Notion</li>
+<li data-i18n="services.nocode.list.3">Workflows Personnalisés</li>
+</ul>
+</div>
+
+<div class="service-card" id="service-automation">
+<h3 data-i18n="services.automation.title">Automatisation</h3>
+<p data-i18n="services.automation.description">Scripts Python personnalisés, automatisation GitHub Actions, et optimisation des processus métier.</p>
+<ul class="service-list">
+<li data-i18n="services.automation.list.0">Scripts Python Sur Mesure</li>
+<li data-i18n="services.automation.list.1">GitHub Actions</li>
+<li data-i18n="services.automation.list.2">Analyse d'Affaires (CBAP)</li>
+<li data-i18n="services.automation.list.3">Monitoring & Alertes</li>
+</ul>
+</div>
+
+<div class="service-card" id="service-cybersecurity">
+<h3 data-i18n="services.cybersecurity.title">Cybersécurité</h3>
+<p data-i18n="services.cybersecurity.description">Audits de sécurité, tests d'intrusion, formation des équipes, et conformité RGPD.</p>
+<ul class="service-list">
+<li data-i18n="services.cybersecurity.list.0">Audits de Sécurité</li>
+<li data-i18n="services.cybersecurity.list.1">Tests d'Intrusion</li>
+<li data-i18n="services.cybersecurity.list.2">Formation des Équipes</li>
+<li data-i18n="services.cybersecurity.list.3">Conformité RGPD</li>
+</ul>
+</div>
+
+<div class="service-card" id="service-business">
+<h3 data-i18n="services.business.title">Business Analyse</h3>
+<p data-i18n="services.business.description">Analyse des besoins, gestion du backlog produit, et accompagnement au changement.</p>
+<ul class="service-list">
+<li data-i18n="services.business.list.0">Analyse des Besoins</li>
+<li data-i18n="services.business.list.1">Backlog Produit (Waterfall/Hybride/Agile)</li>
+<li data-i18n="services.business.list.2">Conduite de Projet & Accompagnement au Changement</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="section" id="expertise" style="background:#f8f9fa">
+<h2 class="section-title" data-i18n="techStack.title">Notre Stack Technique</h2>
+<p style="text-align:center;margin-bottom:2rem" data-i18n="techStack.subtitle">Des technologies de pointe pour des solutions performantes</p>
+<div class="tech-stack">
+<span class="tech-badge">Python</span>
+<span class="tech-badge">JavaScript</span>
+<span class="tech-badge">OpenAI GPT-4</span>
+<span class="tech-badge">Claude AI</span>
+<span class="tech-badge">React</span>
+<span class="tech-badge">Docker</span>
+<span class="tech-badge">AWS</span>
+<span class="tech-badge">PostgreSQL</span>
+<span class="tech-badge">n8n</span>
+<span class="tech-badge">GitHub Actions</span>
+</div>
+</section>
+
+<section class="section" id="contact">
+<h2 class="section-title" data-i18n="contact.title">Prêt à Transformer Votre Entreprise ?</h2>
+<p style="text-align:center;margin-bottom:2rem" data-i18n="contact.subtitle">Contactez-nous pour discuter de votre projet</p>
+<form class="contact-form" action="https://formspree.io/f/mdklrzob" method="POST">
+<div class="form-group">
+<label for="name" data-i18n="contact.form.name">Nom Complet</label>
+<input type="text" id="name" name="name" required>
+</div>
+<div class="form-group">
+<label for="email" data-i18n="contact.form.email">Email</label>
+<input type="email" id="email" name="email" required>
+</div>
+<div class="form-group">
+<label for="service" data-i18n="contact.form.service">Service Souhaité</label>
+<select id="service" name="service" required>
+<option value="" data-i18n="contact.form.servicePlaceholder">Choisir un service</option>
+<option value="AI" data-i18n="contact.form.serviceOptions.ai">Intelligence Artificielle</option>
+<option value="NoCode" data-i18n="contact.form.serviceOptions.nocode">Solutions NoCode</option>
+<option value="Automation" data-i18n="contact.form.serviceOptions.automation">Automatisation</option>
+<option value="Cybersecurity" data-i18n="contact.form.serviceOptions.cybersecurity">Cybersécurité</option>
+<option value="Business" data-i18n="contact.form.serviceOptions.business">Business Analyse</option>
+<option value="Project" data-i18n="contact.form.serviceOptions.project">Conduite de Projet</option>
+<option value="Other" data-i18n="contact.form.serviceOptions.other">Autre</option>
+</select>
+</div>
+<div class="form-group">
+<label for="message" data-i18n="contact.form.message">Description du Projet</label>
+<textarea id="message" name="message" required></textarea>
+</div>
+<button type="submit" class="btn btn-primary" style="width:100%" data-i18n="contact.form.submit">Envoyer la Demande</button>
+</form>
+</section>
+
+<footer>
+<div class="footer-content">
+<div class="footer-section">
+<h4>The Phoenix Agency</h4>
+<p data-i18n="footer.tagline">Votre partenaire numérique pour renaître à l'ère de l'IA</p>
+</div>
+<div class="footer-section">
+<h4 data-i18n="footer.sections.services">Services</h4>
+<a href="#service-ai" data-i18n="services.ai.title">Intelligence Artificielle</a>
+<a href="#service-nocode" data-i18n="services.nocode.title">Solutions NoCode</a>
+<a href="#service-automation" data-i18n="services.automation.title">Automatisation</a>
+<a href="#service-cybersecurity" data-i18n="services.cybersecurity.title">Cybersécurité</a>
+<a href="#service-business" data-i18n="services.business.title">Business Analyse</a>
+</div>
+<div class="footer-section">
+<h4 data-i18n="footer.sections.resources">Ressources</h4>
+<a href="https://github.com/ThePhoenixAgency" target="_blank" rel="noopener noreferrer" data-i18n="footer.links.github">GitHub</a>
+<a href="#expertise" data-i18n="footer.links.technologies">Technologies</a>
+<a href="readme.html" data-i18n="footer.links.readme">Documentation</a>
+</div>
+<div class="footer-section">
+<h4 data-i18n="footer.sections.contact">Contact</h4>
+<a href="#contact" data-i18n="footer.links.email">Email</a>
+<a href="https://www.linkedin.com/company/phoenixproject-ai/" target="_blank" rel="noopener noreferrer" data-i18n="footer.links.linkedin">LinkedIn</a>
+</div>
+</div>
+<p style="margin-top:2rem;opacity:0.7">
+<span data-i18n="footer.copyright">© 2025 The Phoenix Agency. Tous droits réservés.</span><br>
+<small style="opacity:0.6;font-size:0.85rem" data-i18n="footer.license">Tout contenu, code, design et structure de ce site sont protégés sous licence commerciale propriétaire. Toute reproduction, distribution ou utilisation non autorisée est strictement interdite.</small><br>
+<small style="opacity:0.5;font-size:0.8rem;margin-top:0.5rem;display:inline-block" data-i18n="footer.lastUpdated">Dernière mise à jour: 6 décembre 2025</small>
+</p>
+</footer>
+
+<!-- Bouton retour en haut -->
+<button id="backToTop" onclick="scrollToTop()" aria-label="Back to top">↑</button>
+
+<script src="locales.js"></script>
+<script src="theme.js"></script>
+<script>
+// Bouton retour en haut
+window.addEventListener('scroll', () => {
+  const backToTop = document.getElementById('backToTop');
+  if (window.scrollY > 500) {
+    backToTop.classList.add('visible');
+  } else {
+    backToTop.classList.remove('visible');
+  }
+});
+
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Toggle theme button
+function toggleThemeBtn() {
+  if (typeof ThemeManager !== 'undefined') {
+    ThemeManager.toggleTheme();
+  }
+}
+
+// Update language button with flags
+function updateLangButton() {
+  const langBtn = document.getElementById('langBtn');
+  if (currentLang === 'fr') {
+    langBtn.textContent = '🇬🇧';
+  } else {
+    langBtn.textContent = '🇫🇷';
+  }
+}
+
+// Toggle mobile menu
+function toggleMobileMenu() {
+  const navLinks = document.getElementById('navLinks');
+  navLinks.classList.toggle('active');
+}
+</script>
+<script src="chatbot.js"></script>
+</body>
+</html>
