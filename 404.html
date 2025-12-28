@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 - Page Non Trouvée | The Phoenix Agency</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+.error-container{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;text-align:center;padding:2rem;background:linear-gradient(135deg,var(--primary),var(--secondary))}
+.error-code{font-size:clamp(6rem,15vw,12rem);font-weight:900;color:rgba(255,255,255,.9);line-height:1;margin:0;text-shadow:0 4px 20px rgba(0,0,0,.3)}
+.error-title{font-size:clamp(1.5rem,4vw,2.5rem);color:white;margin:1rem 0;font-weight:700}
+.error-message{font-size:clamp(1rem,2vw,1.2rem);color:rgba(255,255,255,.85);max-width:600px;margin:1rem auto 2rem;line-height:1.6}
+.countdown{font-size:1rem;color:rgba(255,255,255,.7);margin:1rem 0}
+.error-actions{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin-top:2rem}
+.error-btn{padding:1rem 2rem;border-radius:50px;font-weight:600;text-decoration:none;transition:all .3s;display:inline-block;border:none;cursor:pointer;font-size:1rem}
+.btn-home{background:white;color:var(--primary)}
+.btn-home:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(255,255,255,.3)}
+.btn-back{background:transparent;color:white;border:2px solid white}
+.btn-back:hover{background:white;color:var(--primary)}
+.error-icon{font-size:4rem;margin-bottom:1rem;animation:float 3s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-20px)}}
+@media(max-width:768px){.error-actions{flex-direction:column;width:100%}.error-btn{width:100%}}
+</style>
+</head>
+<body>
+<div class="error-container">
+<div class="error-icon">🔍</div>
+<h1 class="error-code">404</h1>
+<h2 class="error-title" data-i18n="error.title">Page Non Trouvée</h2>
+<p class="error-message" data-i18n="error.message">
+Oups! La page que vous recherchez semble avoir disparu dans le cyberespace.
+Ne vous inquiétez pas, nous vous redirigeons vers l'accueil.
+</p>
+<p class="countdown" id="countdown">
+<span data-i18n="error.redirect">Redirection automatique dans</span> <span id="timer">2</span> <span data-i18n="error.seconds">secondes</span>...
+</p>
+<div class="error-actions">
+<a href="index.html" class="error-btn btn-home" data-i18n="error.homeButton">Retour à l'Accueil</a>
+<button onclick="history.back()" class="error-btn btn-back" data-i18n="error.backButton">Page Précédente</button>
+</div>
+</div>
+
+<script src="locales.js"></script>
+<script>
+// Traductions spécifiques à la page 404
+const error404Translations = {
+  en: {
+    error: {
+      title: "Page Not Found",
+      message: "Oops! The page you're looking for seems to have disappeared into cyberspace. Don't worry, we're redirecting you to the homepage.",
+      redirect: "Automatic redirect in",
+      seconds: "seconds",
+      homeButton: "Back to Home",
+      backButton: "Previous Page"
+    }
+  },
+  fr: {
+    error: {
+      title: "Page Non Trouvée",
+      message: "Oups! La page que vous recherchez semble avoir disparu dans le cyberespace. Ne vous inquiétez pas, nous vous redirigeons vers l'accueil.",
+      redirect: "Redirection automatique dans",
+      seconds: "secondes",
+      homeButton: "Retour à l'Accueil",
+      backButton: "Page Précédente"
+    }
+  }
+};
+
+// Merge with main translations
+if (typeof translations !== 'undefined') {
+  Object.keys(error404Translations).forEach(lang => {
+    if (!translations[lang]) translations[lang] = {};
+    Object.assign(translations[lang], error404Translations[lang]);
+  });
+}
+
+// Countdown and redirect
+let timeLeft = 2;
+const timerElement = document.getElementById('timer');
+const countdown = setInterval(() => {
+  timeLeft--;
+  timerElement.textContent = timeLeft;
+
+  if (timeLeft <= 0) {
+    clearInterval(countdown);
+    window.location.href = 'index.html';
+  }
+}, 1000);
+
+// Log 404 error for analytics
+if (typeof VisitTracker !== 'undefined' && CookieManager && CookieManager.hasConsent()) {
+  const errorData = {
+    type: '404',
+    url: window.location.href,
+    referrer: document.referrer,
+    timestamp: new Date().toISOString()
+  };
+
+  const errors = JSON.parse(localStorage.getItem('errors') || '[]');
+  errors.push(errorData);
+  if (errors.length > 50) errors.shift();
+  localStorage.setItem('errors', JSON.stringify(errors));
+}
+</script>
+</body>
+</html>
