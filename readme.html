@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>README - The Phoenix Agency</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+body{background:var(--bg-primary);color:var(--text-primary);padding:2rem 1rem;line-height:1.8}
+.readme-container{max-width:900px;margin:0 auto;background:var(--bg-card);padding:3rem;border-radius:16px;box-shadow:0 5px 20px var(--shadow);border:1px solid var(--border-color)}
+.readme-header{text-align:center;margin-bottom:3rem;padding-bottom:2rem;border-bottom:2px solid var(--border-color)}
+.readme-title{font-size:clamp(2rem,5vw,3rem);color:var(--primary);margin-bottom:1rem}
+.badges{display:flex;gap:0.5rem;flex-wrap:wrap;justify-content:center;margin:1.5rem 0}
+.badge{display:inline-block}
+h2{color:var(--primary);font-size:1.8rem;margin:2rem 0 1rem;border-bottom:2px solid var(--border-color);padding-bottom:0.5rem}
+h3{color:var(--secondary);font-size:1.4rem;margin:1.5rem 0 0.75rem}
+h4{color:var(--text-primary);font-size:1.1rem;margin:1rem 0 0.5rem}
+ul,ol{margin:1rem 0;padding-left:2rem}
+li{margin:0.5rem 0}
+code{background:var(--bg-secondary);padding:0.2rem 0.5rem;border-radius:4px;font-family:'Courier New',monospace;font-size:0.9em;color:var(--accent)}
+pre{background:var(--bg-secondary);padding:1.5rem;border-radius:8px;overflow-x:auto;border:1px solid var(--border-color)}
+pre code{background:transparent;padding:0}
+a{color:var(--primary);text-decoration:none;font-weight:600;transition:all .3s}
+a:hover{color:var(--secondary);text-decoration:underline}
+.back-link{display:inline-block;margin-bottom:2rem;padding:0.75rem 1.5rem;background:var(--primary);color:white;border-radius:8px;transition:all .3s}
+.back-link:hover{background:var(--secondary);transform:translateY(-2px);text-decoration:none}
+.section{margin:2rem 0;display:none}
+.section.active{display:block}
+.lang-switcher{text-align:center;margin:2rem 0}
+.lang-btn{padding:0.75rem 1.5rem;margin:0 0.5rem;border:2px solid var(--primary);background:transparent;color:var(--primary);border-radius:8px;cursor:pointer;font-weight:600;transition:all .3s}
+.lang-btn.active{background:var(--primary);color:white}
+.lang-btn:hover{transform:translateY(-2px)}
+.feature-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin:1rem 0}
+.feature-item{background:var(--bg-secondary);padding:1rem;border-radius:8px;border-left:3px solid var(--primary)}
+@media(max-width:768px){
+  .readme-container{padding:1.5rem}
+  .feature-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="readme-container">
+<a href="index.html" class="back-link">← <span id="backText">Back to Home</span></a>
+
+<div class="readme-header">
+<h1 class="readme-title">The Phoenix Agency</h1>
+<p id="subtitle">Professional Multilingual Website</p>
+<div class="badges">
+<img src="https://img.shields.io/badge/WCAG-AA%20Compliant-green?style=flat-square&logo=w3c" alt="WCAG AA">
+<img src="https://img.shields.io/badge/RGPD-Compliant-blue?style=flat-square" alt="RGPD">
+<img src="https://img.shields.io/badge/Responsive-Mobile%20First-orange?style=flat-square" alt="Responsive">
+<img src="https://img.shields.io/badge/i18n-FR%20%7C%20EN-purple?style=flat-square" alt="i18n">
+<img src="https://img.shields.io/badge/Dark%20Mode-Supported-black?style=flat-square" alt="Dark Mode">
+<img src="https://img.shields.io/badge/License-Commercial-red?style=flat-square" alt="License">
+</div>
+</div>
+
+<div class="lang-switcher">
+<button class="lang-btn active" onclick="switchLang('en')">🇬🇧 English</button>
+<button class="lang-btn" onclick="switchLang('fr')">🇫🇷 Français</button>
+</div>
+
+<!-- English Version -->
+<div id="content-en" class="section active">
+<p>Modern multilingual website for The Phoenix Agency - AI, NoCode, Automation & Cybersecurity services.</p>
+
+<h2>🌐 View the Site</h2>
+<p><strong><a href="https://ethanthePhoenix38.github.io/phoenixproject-website/" target="_blank" rel="noopener">Access the website →</a></strong></p>
+
+<h2>✨ Features</h2>
+
+<div class="feature-grid">
+<div class="feature-item"><strong>🌍 Internationalization</strong><br>FR/EN system with automatic IP detection</div>
+<div class="feature-item"><strong>🌓 Themes</strong><br>Light/Dark mode (WCAG AA)</div>
+<div class="feature-item"><strong>🎨 Templates</strong><br>4 visual styles to choose from</div>
+<div class="feature-item"><strong>📱 Responsive</strong><br>Mobile-first design</div>
+<div class="feature-item"><strong>🍪 GDPR</strong><br>Cookie consent management</div>
+<div class="feature-item"><strong>📊 Analytics</strong><br>Visit statistics by country</div>
+<div class="feature-item"><strong>🎮 PhoenixOS</strong><br>Interactive games demo</div>
+<div class="feature-item"><strong>🔍 SEO</strong><br>Complete optimization</div>
+</div>
+
+<h3>4 Visual Templates</h3>
+<ul>
+<li><strong>Modern</strong> - Contemporary design with gradients</li>
+<li><strong>Professional</strong> - Elegant corporate style</li>
+<li><strong>Fluid</strong> - Dynamic animations</li>
+<li><strong>Minimalist</strong> - Clean black & white</li>
+</ul>
+
+<h3>Interactive Demos</h3>
+<ul>
+<li>🎮 <strong><a href="phoenix-os.html" target="_blank">PhoenixOS</a></strong> - OS simulation with 4 games:
+  <ul>
+    <li>🐍 Snake - Classic arcade game</li>
+    <li>⭕ Tic-Tac-Toe - Strategic board game</li>
+    <li>🧠 Memory - Card matching game</li>
+    <li>🏓 Pong - Retro paddle game</li>
+  </ul>
+</li>
+<li>📊 <strong><a href="statistiques.html" target="_blank">Statistics Dashboard</a></strong> - Real-time visitor analytics</li>
+</ul>
+
+<h3>SEO & Security</h3>
+<ul>
+<li>Complete meta tags (Open Graph, Twitter Cards)</li>
+<li>robots.txt with AI bot protection</li>
+<li>Commercial proprietary license</li>
+<li>Anti-scraping measures</li>
+<li>Custom 404 error page</li>
+</ul>
+
+<h2>📱 Supported Devices</h2>
+<ul>
+<li>iPhone Classic (375px - 414px)</li>
+<li>iPhone 16 Pro Max (430px)</li>
+<li>iPad (768px - 1024px)</li>
+<li>22-inch PC (1920px)</li>
+<li>34-inch Ultra-Wide Monitor (3440px)</li>
+</ul>
+
+<h2>🛠️ Tech Stack</h2>
+
+<h4>Core Technologies</h4>
+<ul>
+<li>HTML5 semantic</li>
+<li>CSS3 (Custom Properties, Grid, Flexbox)</li>
+<li>Vanilla JavaScript ES6+</li>
+<li>ipapi.co API for geolocation</li>
+</ul>
+
+<h4>Featured Technologies (33+)</h4>
+<p><code>Python</code> <code>JavaScript</code> <code>TypeScript</code> <code>React</code> <code>Vue.js</code> <code>Node.js</code> <code>FastAPI</code> <code>AI Agents</code> <code>PyTorch</code> <code>OpenAI GPT-4</code> <code>Claude AI</code> <code>Cursor AI</code> <code>VS Code</code> <code>MCP</code> <code>Autogravity</code> <code>LangChain</code> <code>n8n</code> <code>Make</code> <code>Airtable</code> <code>Notion API</code> <code>Docker</code> <code>Podman</code> <code>Kubernetes</code> <code>AWS</code> <code>Azure</code> <code>PostgreSQL</code> <code>MongoDB</code> <code>Redis</code> <code>Linux</code> <code>GitHub Actions</code> <code>CI/CD</code> <code>REST API</code> <code>GraphQL</code></p>
+
+<h2>📦 Project Structure</h2>
+<pre><code>├── index.html           # Main HTML structure
+├── styles.css           # Themes and responsive design
+├── templates.css        # 4 template styles
+├── theme.js            # Interactive features
+├── locales.js          # Translation system
+├── os-demo.html        # PhoenixOS interactive demo
+├── statistiques.html   # Visitor statistics dashboard
+├── readme.html         # This interactive README
+├── 404.html            # Custom error page
+└── robots.txt          # SEO and bot control</code></pre>
+
+<h2>🚀 Deployment</h2>
+<p>The site is automatically deployed on GitHub Pages:<br>
+<strong><a href="https://ethanthePhoenix38.github.io/phoenixproject-website/" target="_blank">https://ethanthePhoenix38.github.io/phoenixproject-website/</a></strong></p>
+
+<h2>📄 License</h2>
+<p>All rights reserved © 2025 The Phoenix Agency<br>
+Commercial proprietary license - Unauthorized reproduction strictly prohibited.</p>
+
+<p style="margin-top:2rem;opacity:0.6;font-size:0.85rem;text-align:center">
+Last updated: December 6, 2025
+</p>
+</div>
+
+<!-- French Version -->
+<div id="content-fr" class="section">
+<p>Site web moderne et multilingue pour The Phoenix Agency - Services d'IA, NoCode, Automatisation & Cybersécurité.</p>
+
+<h2>🌐 Voir le Site</h2>
+<p><strong><a href="https://ethanthePhoenix38.github.io/phoenixproject-website/" target="_blank" rel="noopener">Accéder au site →</a></strong></p>
+
+<h2>✨ Fonctionnalités</h2>
+
+<div class="feature-grid">
+<div class="feature-item"><strong>🌍 Internationalisation</strong><br>Système FR/EN avec détection IP</div>
+<div class="feature-item"><strong>🌓 Thèmes</strong><br>Mode clair/sombre (WCAG AA)</div>
+<div class="feature-item"><strong>🎨 Templates</strong><br>4 styles visuels au choix</div>
+<div class="feature-item"><strong>📱 Responsive</strong><br>Design Mobile-first</div>
+<div class="feature-item"><strong>🍪 RGPD</strong><br>Gestion consentement cookies</div>
+<div class="feature-item"><strong>📊 Analytiques</strong><br>Statistiques par pays</div>
+<div class="feature-item"><strong>🎮 PhoenixOS</strong><br>Démo jeux interactifs</div>
+<div class="feature-item"><strong>🔍 SEO</strong><br>Optimisation complète</div>
+</div>
+
+<h3>4 Templates Visuels</h3>
+<ul>
+<li><strong>Moderne</strong> - Design actuel avec dégradés</li>
+<li><strong>Professionnel</strong> - Style corporatif élégant</li>
+<li><strong>Fluide</strong> - Animations dynamiques</li>
+<li><strong>Épuré</strong> - Minimaliste noir & blanc</li>
+</ul>
+
+<h3>Démos Interactives</h3>
+<ul>
+<li>🎮 <strong><a href="phoenix-os.html" target="_blank">PhoenixOS</a></strong> - Simulation d'OS avec 4 jeux :
+  <ul>
+    <li>🐍 Snake - Jeu d'arcade classique</li>
+    <li>⭕ Morpion - Jeu de stratégie</li>
+    <li>🧠 Memory - Jeu de mémoire</li>
+    <li>🏓 Pong - Jeu de raquette rétro</li>
+  </ul>
+</li>
+<li>📊 <strong><a href="statistiques.html" target="_blank">Tableau de Bord</a></strong> - Analytiques des visiteurs en temps réel</li>
+</ul>
+
+<h3>SEO & Sécurité</h3>
+<ul>
+<li>Meta tags complets (Open Graph, Twitter Cards)</li>
+<li>robots.txt avec protection bots IA</li>
+<li>Licence commerciale propriétaire</li>
+<li>Mesures anti-scraping</li>
+<li>Page d'erreur 404 personnalisée</li>
+</ul>
+
+<h2>📱 Appareils Supportés</h2>
+<ul>
+<li>iPhone Classique (375px - 414px)</li>
+<li>iPhone 16 Pro Max (430px)</li>
+<li>iPad (768px - 1024px)</li>
+<li>PC 22 pouces (1920px)</li>
+<li>Moniteur Ultra-Wide 34 pouces (3440px)</li>
+</ul>
+
+<h2>🛠️ Technologies</h2>
+
+<h4>Technologies de Base</h4>
+<ul>
+<li>HTML5 sémantique</li>
+<li>CSS3 (Custom Properties, Grid, Flexbox)</li>
+<li>JavaScript ES6+ (Vanilla)</li>
+<li>API ipapi.co pour géolocalisation</li>
+</ul>
+
+<h4>Technologies Présentées (33+)</h4>
+<p><code>Python</code> <code>JavaScript</code> <code>TypeScript</code> <code>React</code> <code>Vue.js</code> <code>Node.js</code> <code>FastAPI</code> <code>Agents intelligents</code> <code>PyTorch</code> <code>OpenAI GPT-4</code> <code>Claude AI</code> <code>Cursor AI</code> <code>VS Code</code> <code>MCP</code> <code>Autogravity</code> <code>LangChain</code> <code>n8n</code> <code>Make</code> <code>Airtable</code> <code>Notion API</code> <code>Docker</code> <code>Podman</code> <code>Kubernetes</code> <code>AWS</code> <code>Azure</code> <code>PostgreSQL</code> <code>MongoDB</code> <code>Redis</code> <code>Linux</code> <code>GitHub Actions</code> <code>CI/CD</code> <code>REST API</code> <code>GraphQL</code></p>
+
+<h2>📦 Structure du Projet</h2>
+<pre><code>├── index.html           # Structure HTML principale
+├── styles.css           # Thèmes et responsive
+├── templates.css        # Styles des 4 templates
+├── theme.js            # Fonctionnalités interactives
+├── locales.js          # Système de traduction
+├── os-demo.html        # Démo interactive PhoenixOS
+├── statistiques.html   # Tableau de bord statistiques
+├── readme.html         # Ce README interactif
+├── 404.html            # Page d'erreur personnalisée
+└── robots.txt          # Contrôle SEO et bots</code></pre>
+
+<h2>🚀 Déploiement</h2>
+<p>Le site est automatiquement déployé sur GitHub Pages :<br>
+<strong><a href="https://ethanthePhoenix38.github.io/phoenixproject-website/" target="_blank">https://ethanthePhoenix38.github.io/phoenixproject-website/</a></strong></p>
+
+<h2>📄 Licence</h2>
+<p>Tous droits réservés © 2025 The Phoenix Agency<br>
+Licence commerciale propriétaire - Reproduction non autorisée strictement interdite.</p>
+
+<p style="margin-top:2rem;opacity:0.6;font-size:0.85rem;text-align:center">
+Dernière mise à jour: 6 décembre 2025
+</p>
+</div>
+
+</div>
+
+<script src="theme.js"></script>
+<script>
+let currentLang = 'en';
+
+function switchLang(lang) {
+  currentLang = lang;
+
+  // Hide all sections
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+
+  // Show selected language
+  document.getElementById(`content-${lang}`).classList.add('active');
+
+  // Update button states
+  document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+  event.target.classList.add('active');
+
+  // Update texts
+  if (lang === 'fr') {
+    document.getElementById('subtitle').textContent = 'Site Web Professionnel Multilingue';
+    document.getElementById('backText').textContent = 'Retour à l\'Accueil';
+    document.title = 'README - The Phoenix Agency';
+  } else {
+    document.getElementById('subtitle').textContent = 'Professional Multilingual Website';
+    document.getElementById('backText').textContent = 'Back to Home';
+    document.title = 'README - The Phoenix Agency';
+  }
+
+  // Save preference
+  if (typeof ThemeManager !== 'undefined') {
+    ThemeManager.savePreference('readmeLang', lang);
+  }
+}
+
+// Load saved language preference
+document.addEventListener('DOMContentLoaded', () => {
+  const savedLang = localStorage.getItem('readmeLang') || 'en';
+  if (savedLang === 'fr') {
+    document.querySelector('.lang-btn:last-child').click();
+  }
+});
+</script>
+</body>
+</html>
