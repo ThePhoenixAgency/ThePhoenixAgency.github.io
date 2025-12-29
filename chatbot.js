@@ -210,8 +210,7 @@ class PhoenixChatbot {
           window.open('https://calendly.com/your-link', '_blank');
         }, 1500);
         break;
-
-      case 'question':
+            window.open('https://calendly.com/ethanbernier/', '_blank');      case 'question':
         this.addBotMessage("Je suis là pour répondre à vos questions ! Que souhaitez-vous savoir ?");
         this.showQuickReplies([
           { text: "🤖 Services IA", action: "ia" },
