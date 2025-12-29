@@ -582,19 +582,25 @@
 
 .template-selector {
   position: fixed;
-  top: 90px;
+  top: 140px;
   right: 20px;
   z-index: 2000;
+  width: 160px;
+  min-width: 140px;
   background: var(--bg-card);
   padding: 0.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 15px var(--shadow);
+  max-height: 0;
+  overflow: hidden;
   border: 1px solid var(--border-color);
-  display: none;
-  transition: all 0.3s ease;
+  opacity: 0;
 }
 
 .template-selector.visible {
+  max-height: 250px;
+  opacity: 1;
+  transform: translateY(0);
   display: block;
 }
 
@@ -673,23 +679,6 @@
 
   .tab-item {
     padding: 0.4rem 0.8rem;
- 
-
-  /* Fix pour le menu templates sur mobile */
-  .template-btn {
-    position: relative;
     font-size: 0.85rem;
-    padding: 0.4rem 0.8rem;
-    min-width: auto;
-  }
-
-  .template-selector {
-    position: absolute;
-    right: 0;
-    top: 100%;
-    z-index: 1000;
-    min-width: 150px;
-    max-width: 200px;
-  }   font-size: 0.85rem;
   }
 }
