@@ -3,21 +3,25 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-title: "The Phoenix Agency - WebAgency IA & Automatisation"
+title: "The Phoenix Project Agency - WebAgency IA & Automatisation"
 description: "Spécialistes en Intelligence Artificielle, NoCode, Automatisation et Cybersécurité. Votre partenaire digital pour renaître dans l'ère de l'IA."
 url: "https://thephoenixagency.github.io"
 baseurl: ""
 
 # SEO
-author: "The Phoenix Agency"
-twitter:
-  username: ThePhoenixAgency
+author: "The Phoenix Project Agency"
+instagram:
+  username: "@phoenixprojectai"
   card: summary_large_image
 social:
   name: The Phoenix Agency
   links:
     - https://github.com/ThePhoenixAgency
-    - https://www.linkedin.com/company/the-phoenix-agency
+    - https://www.linkedin.com/company/phoenixproject-ai/
+    - https://www.instagram.com/phoenixprojectai/
+    - https://www.instagram.com/phoenixguadiantools/
+    - http://tinyurl.com/EthanThePhoenix
+    - https://ethanbernier.link/
 
 # Configuration
 markdown: kramdown

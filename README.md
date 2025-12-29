@@ -1,14 +1,16 @@
-# 🥇 **Merci de visiter ! N'oubliez pas de mettre une ⭐ étoile ⭐ et de nous suivre 🤩**
+# 🥇 **Merci de visiter notre page de profil ! <br>N'oubliez pas de mettre une ⭐ étoile ⭐ et de nous suivre 🤩**
 
 <br><br>
-
 <table>
   <tr>
     <td style="vertical-align: middle;">
-      <h1>🔥 The Phoenix Agency</h1>
+      <h1>🔥 The Phoenix Project Agency</h1>
     </td>
     <td style="vertical-align: middle;">
       <img src="https://media.giphy.com/media/2A75RyXVzzSI2bx4Gj/giphy.gif" width="120" alt="Phoenix on fire"/>
+    </td>
+    <td>
+      <img src="https://tryhackme-badges.s3.amazonaws.com/EthanThePhoenix.png" alt="Your Image Badge" />
     </td>
   </tr>
 </table>
@@ -16,9 +18,9 @@
 **<span style="color:#FF5733;"><b>Votre partenaire digital pour renaître dans l'ère de l'IA !</b></span>**
 
 ## 🚀 WebAgency Spécialisée en IA, NoCode, Automatisation & Cybersécurité
-### Innovation | Intelligence Artificielle | Automatisation | NoCode | Cybersécurité
+### | Agilité | Innovation | Intelligence Artificielle | Automatisation | NoCode | Cybersécurité |
 
-Bienvenue chez **The Phoenix Agency** ! 🦅  
+Bienvenue chez **The Phoenix Project Agency** ! 🦅  
 Comme le Phoenix qui renaît de ses cendres, nous transformons votre présence digitale grâce à l'innovation, l'IA et l'automatisation.
 
 ---
@@ -38,11 +40,16 @@ Comme le Phoenix qui renaît de ses cendres, nous transformons votre présence d
 
 ### 🚀 Nos Expertises & Technologies
 
+![Innovation](https://img.shields.io/badge/Innovation-FFDC00?style=for-the-badge&logo=sparkles&logoColor=black)
+![Business Analysis](https://img.shields.io/badge/Business%20Analysis-6A4C93?style=for-the-badge&logo=googleanalytics&logoColor=white)
+![Project Management](https://img.shields.io/badge/Project%20Management-FF851B?style=for-the-badge&logo=asana&logoColor=white)
+
 ![Artificial Intelligence](https://img.shields.io/badge/Artificial%20Intelligence-00BFFF?style=for-the-badge&logo=openai&logoColor=white)
-![Machine Learning](https://img.shields.io/badge/Machine%20Learning-FF6F61?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![NoCode](https://img.shields.io/badge/NoCode-7B68EE?style=for-the-badge&logo=zapier&logoColor=white)
 ![Automation](https://img.shields.io/badge/Automation-FFD700?style=for-the-badge&logo=githubactions&logoColor=black)
+
 ![Cybersecurity](https://img.shields.io/badge/Cybersecurity-FF4136?style=for-the-badge&logo=hackthebox&logoColor=white)
+![Data Analytics](https://img.shields.io/badge/Analytics-0074D9?style=for-the-badge&logo=chartdotjs&logoColor=white)
 ![Web Development](https://img.shields.io/badge/Web%20Development-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 
 ---
@@ -124,7 +131,7 @@ Comme le Phoenix qui renaît de ses cendres, nous transformons votre présence d
 | Repository | Description | Language | Stars | Status |
 |------------|-------------|----------|-------|--------|
 | [🐍 py-stats-toolkit](https://github.com/ThePhoenixAgency/py-stats-toolkit) | Bibliothèque de fonctions statistiques, algo, Machine Learning, génétique | ![Python](https://img.shields.io/badge/Python-3670A0?style=flat&logo=python&logoColor=ffdd54) | ![Stars](https://img.shields.io/github/stars/ThePhoenixAgency/py-stats-toolkit?style=flat) | ![Status](https://img.shields.io/badge/Status-Active-success) |
-| [🌐 ThePhoenixAgency.github.io](https://github.com/ThePhoenixAgency/ThePhoenixAgency.github.io) | Site officiel The Phoenix Agency | ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) | ![Stars](https://img.shields.io/github/stars/ThePhoenixAgency/ThePhoenixAgency.github.io?style=flat) | ![Status](https://img.shields.io/badge/Status-Active-success) |
+| [🌐 https://github.com/ThePhoenixAgency/ThePhoenixAgency.github.io](https://ethanthephoenix38.github.io/phoenixproject-website/) | Site officiel The Phoenix Agency | ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) | ![Stars](https://img.shields.io/github/stars/ThePhoenixAgency/ThePhoenixAgency.github.io?style=flat) | ![Status](https://img.shields.io/badge/Status-Active-success) |
 
 ---
 
@@ -158,14 +165,20 @@ Comme le Phoenix qui renaît de ses cendres, nous transformons votre présence d
 
 ### 🌐 Nous Trouver
 
-[![Website](https://img.shields.io/badge/Website-FF7139?style=for-the-badge&logo=firefox&logoColor=white)](https://thephoenixagency.github.io)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/the-phoenix-agency)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/phoenixproject-ai/)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/phoenixprojectai/)
+[![Website](https://img.shields.io/badge/Website-FF7139?style=for-the-badge&logo=firefox&logoColor=white)](https://github.com/ThePhoenixAgency)
+
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ThePhoenixAgency)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact@thephoenixagency.com)
+[![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discordapp.com/users/687037223673004092)
+
+[![GitHub / Organization](https://avatars.githubusercontent.com/u/210052573?s=64&v=4)](thephoenixagency.github.io)
 
 ---
 
 ## 📞 **Contactez-nous pour votre transformation digitale :**
+
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact@phonxproject.onmicrosoft.com)
 
 💬 **Demandez-nous pour :**  
 - Solutions d'automatisation sur mesure
@@ -173,9 +186,10 @@ Comme le Phoenix qui renaît de ses cendres, nous transformons votre présence d
 - Consulting en cybersécurité  
 - Formation et accompagnement NoCode  
 - Transformation digitale complète
+- Agilité, accompagnement au changement
 
 📧 **Contact :**  
-Contactez-nous via nos réseaux ou créez une issue GitHub !
+Contactez-nous via nos réseaux, notre mail!
 
 ---
 

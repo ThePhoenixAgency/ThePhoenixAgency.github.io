@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Statistiques - The Phoenix Agency</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+body{background:var(--bg-primary);color:var(--text-primary);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;padding:2rem;min-height:100vh}
+.stats-container{max-width:1200px;margin:0 auto}
+h1{color:var(--primary);margin-bottom:2rem;text-align:center}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;margin-top:2rem}
+.stat-card{background:var(--bg-card);padding:2rem;border-radius:16px;box-shadow:0 5px 20px var(--shadow);border:1px solid var(--border-color)}
+.stat-card h2{color:var(--primary);font-size:1.5rem;margin-bottom:1rem}
+.stat-number{font-size:3rem;font-weight:bold;color:var(--accent);margin:1rem 0}
+.country-list{list-style:none;padding:0}
+.country-item{padding:0.75rem;margin:0.5rem 0;background:var(--bg-secondary);border-radius:8px;display:flex;justify-content:space-between;align-items:center;border:1px solid var(--border-color)}
+.country-name{font-weight:600}
+.country-count{background:var(--primary);color:white;padding:0.25rem 0.75rem;border-radius:12px;font-size:0.9rem}
+.back-link{display:inline-block;margin-bottom:2rem;padding:0.75rem 1.5rem;background:var(--primary);color:white;text-decoration:none;border-radius:8px;transition:all .3s}
+.back-link:hover{background:var(--secondary);transform:translateY(-2px)}
+.no-data{text-align:center;padding:3rem;color:var(--text-secondary);font-style:italic}
+.chart-container{margin-top:2rem;padding:1.5rem;background:var(--bg-secondary);border-radius:12px}
+.chart-bar{display:flex;align-items:center;margin:1rem 0}
+.chart-label{min-width:150px;font-weight:600}
+.chart-bar-fill{height:30px;background:linear-gradient(135deg,var(--primary),var(--secondary));border-radius:6px;display:flex;align-items:center;padding:0 1rem;color:white;font-weight:600;transition:all .3s}
+.chart-bar-fill:hover{transform:scaleX(1.02);filter:brightness(1.1)}
+@media(max-width:768px){
+  .stats-grid{grid-template-columns:1fr}
+  .chart-label{min-width:100px;font-size:0.9rem}
+}
+</style>
+</head>
+<body>
+<div class="stats-container">
+<a href="index.html" class="back-link">← Retour à l'accueil</a>
+
+<h1>📊 Statistiques des Visites</h1>
+
+<div class="stats-grid">
+<div class="stat-card">
+<h2>Total des Visites</h2>
+<div class="stat-number" id="totalVisits">0</div>
+<p>Nombre total de visites enregistrées</p>
+</div>
+
+<div class="stat-card">
+<h2>Pays Uniques</h2>
+<div class="stat-number" id="uniqueCountries">0</div>
+<p>Nombre de pays différents</p>
+</div>
+
+<div class="stat-card">
+<h2>Dernière Visite</h2>
+<div class="stat-number" id="lastVisit" style="font-size:1.5rem">-</div>
+<p>Date et heure de la dernière visite</p>
+</div>
+</div>
+
+<div class="stat-card" style="margin-top:2rem">
+<h2>🌍 Visites par Pays</h2>
+<div id="countriesList" class="no-data">Aucune donnée disponible</div>
+<div id="countriesChart" class="chart-container" style="display:none"></div>
+</div>
+
+<div class="stat-card" style="margin-top:2rem">
+<h2>📅 Historique des Visites</h2>
+<ul id="visitHistory" class="country-list">
+<li class="no-data">Aucune visite enregistrée</li>
+</ul>
+</div>
+</div>
+
+<script>
+function loadStats(){
+  const visits=JSON.parse(localStorage.getItem('visits')||'[]');
+  const stats=JSON.parse(localStorage.getItem('visitStats')||'{"total":0,"byCountry":{}}');
+
+  if(visits.length===0){
+    return;
+  }
+
+  // Total visits
+  document.getElementById('totalVisits').textContent=stats.total;
+
+  // Unique countries
+  const uniqueCountries=Object.keys(stats.byCountry).length;
+  document.getElementById('uniqueCountries').textContent=uniqueCountries;
+
+  // Last visit
+  if(visits.length>0){
+    const lastVisit=new Date(visits[visits.length-1].timestamp);
+    document.getElementById('lastVisit').textContent=lastVisit.toLocaleString('fr-FR');
+  }
+
+  // Countries list
+  const countriesList=document.getElementById('countriesList');
+  const countriesChart=document.getElementById('countriesChart');
+
+  if(Object.keys(stats.byCountry).length>0){
+    countriesList.style.display='none';
+    countriesChart.style.display='block';
+
+    const sortedCountries=Object.entries(stats.byCountry)
+      .sort((a,b)=>b[1]-a[1])
+      .slice(0,10);
+
+    const maxCount=Math.max(...sortedCountries.map(c=>c[1]));
+
+    countriesChart.innerHTML=sortedCountries.map(([country,count])=>{
+      const percentage=(count/maxCount)*100;
+      return `
+        <div class="chart-bar">
+          <div class="chart-label">${country}</div>
+          <div class="chart-bar-fill" style="width:${percentage}%">${count}</div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  // Visit history
+  const historyList=document.getElementById('visitHistory');
+  if(visits.length>0){
+    historyList.innerHTML=visits.slice(-20).reverse().map(visit=>{
+      const date=new Date(visit.timestamp);
+      return `
+        <li class="country-item">
+          <span class="country-name">${visit.country||visit.countryCode}</span>
+          <span class="country-count">${date.toLocaleString('fr-FR')}</span>
+        </li>
+      `;
+    }).join('');
+  }
+}
+
+// Load stats on page load
+document.addEventListener('DOMContentLoaded',loadStats);
+
+// Refresh stats every 5 seconds
+setInterval(loadStats,5000);
+</script>
+</body>
+</html>
