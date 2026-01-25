@@ -1,4 +1,3 @@
-rajoute LM Studio encompétences // ===================================
 // SYSTÈME DE TRADUCTION FR/EN
 // ===================================
 
