@@ -14,7 +14,6 @@ const translations = {
         // Hero Section
         hero: {
             subtitle1: "Your Digital Renaissance Starts Here",
-            subtitle2: "Transform Your Business with Artificial Intelligence",
             subtitle2: "Specialists in AI, NoCode, Automation & Cybersecurity. We bring your digital projects to life",
             stat1: {
                 number: "65%",
