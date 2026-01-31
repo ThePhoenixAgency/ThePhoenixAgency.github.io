@@ -29,7 +29,7 @@ class PhoenixChatbot {
       <!-- Fenêtre du chatbot -->
       <div class="chatbot-window" id="chatbotWindow">
         <div class="chatbot-header">
-          <h3 data-i18n="chatbot.title">Assistant Phoenix</h3>
+          <h3 data-i18n="chatbot.title">Assistant de Phoenix</h3>
           <button class="chatbot-close" id="chatbotClose">
             <svg viewBox="0 0 24 24">
               <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
@@ -74,7 +74,7 @@ class PhoenixChatbot {
       notification.style.display = 'none';
 
       if (this.messages.length === 0) {
-        this.addBotMessage("Bonjour ! 👋 Je suis l'assistant de ThePhoenixAgency. Comment puis-je vous aider aujourd'hui ?");
+        this.addBotMessage("Bonjour ! 👋 Je suis l'assistant de Phoenix. Comment puis-je vous aider aujourd'hui ?");
         this.showQuickReplies([
           { text: "📅 Prendre RDV", action: "booking" },
           { text: "💬 Poser une question", action: "question" },
@@ -218,9 +218,11 @@ class PhoenixChatbot {
       case 'booking':
         this.addBotMessage("Excellent ! Je vous redirige vers notre système de réservation. 📅");
         setTimeout(() => {
-                window.open('https://calendly.com/ethanbernier', '_blank', 'width=600,height=650,scrollbars=yes');        }, 1500);
-        break;
-            window.open('https://calendly.com/ethanbernier/', '_blank');      
+                const width = 600;
+                const height = 650;
+                const left = (screen.width - width) / 2;
+                const top = (screen.height - height) / 2;
+                window.open('https://calendly.com/ethanbernier', '_blank', `width=${width},height=${height},left=${left},top=${top},scrollbars=yes`);        break;
       case 'question':
         this.showQuickReplies([
           { text: "⚡ Services IA", action: "AI" },
