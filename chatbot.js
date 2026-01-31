@@ -29,7 +29,7 @@ class PhoenixChatbot {
       <!-- Fenêtre du chatbot -->
       <div class="chatbot-window" id="chatbotWindow">
         <div class="chatbot-header">
-          <h3 data-i18n="chatbot.title">Assistant Phoenix</h3>
+          <h3 data-i18n="chatbot.title">Assistant de Phoenix</h3>
           <button class="chatbot-close" id="chatbotClose">
             <svg viewBox="0 0 24 24">
               <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
@@ -74,7 +74,7 @@ class PhoenixChatbot {
       notification.style.display = 'none';
 
       if (this.messages.length === 0) {
-        this.addBotMessage("Bonjour ! 👋 Je suis l'assistant de The Phoenix Agency. Comment puis-je vous aider aujourd'hui ?");
+        this.addBotMessage("Bonjour ! 👋 Je suis l'assistant de Phoenix. Comment puis-je vous aider aujourd'hui ?");
         this.showQuickReplies([
           { text: "📅 Prendre RDV", action: "booking" },
           { text: "💬 Poser une question", action: "question" },
@@ -207,20 +207,23 @@ class PhoenixChatbot {
       case 'booking':
         this.addBotMessage("Excellent ! Je vous redirige vers notre système de réservation. 📅");
         setTimeout(() => {
-          window.open('https://calendly.com/your-link', '_blank');
+          window.open('https://calendly.com/ethanbernier/nouveau-creneau/', '_blank');
         }, 1500);
         break;
-            window.open('https://calendly.com/ethanbernier/', '_blank');      case 'question':
+          window.open('https://calendly.com/ethanbernier/nouveau-creneau/', '_blank');      
+        case 'question':
         this.addBotMessage("Je suis là pour répondre à vos questions ! Que souhaitez-vous savoir ?");
         this.showQuickReplies([
-          { text: "🤖 Services IA", action: "ia" },
-          { text: "🔒 Cybersécurité", action: "security" },
-          { text: "⚡ Automatisation", action: "automation" }
+          { text: "Services IA", action: "ia" },
+          { text: "Cybersécurité", action: "security" },
+          { text: "⚡ Automatisation", action: "automation" },
+          { text: "⚡ Cours", action: "Courses" },
+          { text: "⚡ Business Analyse", action: "Business Analysis" }         
         ]);
         break;
 
       case 'services':
-        this.addBotMessage("Nous proposons :\n• Intelligence Artificielle\n• Solutions NoCode\n• Automatisation\n• Cybersécurité\n• Business Analyse\n\nQuel service vous intéresse ?");
+        this.addBotMessage("Nous proposons :\n• Intelligence Artificielle\n• Solutions NoCode\n• Automatisation\n• Cybersécurité\n• Cours \n• Business Analyse\n\nQuel service vous intéresse ?");
         break;
     }
   }
@@ -234,7 +237,7 @@ class PhoenixChatbot {
     this.addUserMessage(text);
     input.value = '';
 
-    // Simulation de réponse intelligente
+    // Réponse
     setTimeout(() => {
       this.addBotMessage("Merci pour votre message ! Un expert vous répondra sous peu. Souhaitez-vous prendre rendez-vous ?");
       this.showQuickReplies([
