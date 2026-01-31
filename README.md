@@ -131,7 +131,7 @@ Comme le Phoenix qui renaît de ses cendres, nous transformons votre présence d
 | Repository | Description | Language | Stars | Status |
 |------------|-------------|----------|-------|--------|
 | [🐍 py-stats-toolkit](https://github.com/ThePhoenixAgency/py-stats-toolkit) | Bibliothèque de fonctions statistiques, algo, Machine Learning, génétique | ![Python](https://img.shields.io/badge/Python-3670A0?style=flat&logo=python&logoColor=ffdd54) | ![Stars](https://img.shields.io/github/stars/ThePhoenixAgency/py-stats-toolkit?style=flat) | ![Status](https://img.shields.io/badge/Status-Active-success) |
-| [🌐 https://github.com/ThePhoenixAgency/ThePhoenixAgency.github.io](https://ethanthephoenix38.github.io/phoenixproject-website/) | Site officiel The Phoenix Agency | ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) | ![Stars](https://img.shields.io/github/stars/ThePhoenixAgency/ThePhoenixAgency.github.io?style=flat) | ![Status](https://img.shields.io/badge/Status-Active-success) |
+| [🌐 https://ThePhoenixAgency.github.io](ThePhoenixAgency.github.io) | Site officiel ThePhoenixAgency | ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) | ![Stars](https://img.shields.io/github/stars/ThePhoenixAgency/ThePhoenixAgency.github.io?style=flat) | ![Status](https://img.shields.io/badge/Status-Active-success) |
 
 ---
 
@@ -167,9 +167,9 @@ Comme le Phoenix qui renaît de ses cendres, nous transformons votre présence d
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/phoenixproject-ai/)
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/phoenixprojectai/)
-[![Website](https://img.shields.io/badge/Website-FF7139?style=for-the-badge&logo=firefox&logoColor=white)](https://github.com/ThePhoenixAgency)
+[![Website](https://img.shields.io/badge/Website-FF7139?style=for-the-badge&logo=firefox&logoColor=white)](https://ThePhoenixAgency.github.io)
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ThePhoenixAgency)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://ThePhoenixAgency.github.io)
 [![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discordapp.com/users/687037223673004092)
 
 [![GitHub / Organization](https://avatars.githubusercontent.com/u/210052573?s=64&v=4)](thephoenixagency.github.io)
