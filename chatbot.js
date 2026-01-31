@@ -218,11 +218,11 @@ class PhoenixChatbot {
       case 'booking':
         this.addBotMessage("Excellent ! Je vous redirige vers notre système de réservation. 📅");
         setTimeout(() => {
-                const width = 600;
-                const height = 650;
+                const width = 550;
+                const height = 600;
                 const left = (screen.width - width) / 2;
                 const top = (screen.height - height) / 2;
-                window.open('https://calendly.com/ethanbernier/nouveau-creneau', '_blank', `width=${width},height=${height},left=${left},top=${top},scrollbars=yes`);        break;
+                window.open('https://calendly.com/ethanbernier/nouveau-creneau', '_blank', 'width=${width},height=${height},left=${left},top=${top},scrollbars=yes');        break;
       case 'question':
         this.showQuickReplies([
           { text: "⚡ Services IA", action: "AI" },
