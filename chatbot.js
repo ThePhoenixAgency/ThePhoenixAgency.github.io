@@ -218,11 +218,9 @@ class PhoenixChatbot {
       case 'booking':
         this.addBotMessage("Excellent ! Je vous redirige vers notre système de réservation. 📅");
         setTimeout(() => {
-          window.open('https://calendly.com/your-link', '_blank');
-        }, 1500);
+                window.open('https://calendly.com/your-link', '_blank', 'width=600,height=700,scrollbars=yes');        }, 1500);
         break;
             window.open('https://calendly.com/ethanbernier/', '_blank');      case 'question':
-        this.addBotMessage("Je suis là pour répondre à vos questions ! Que souhaitez-vous savoir ?");
         this.showQuickReplies([
           { text: "🤖 Services IA", action: "ia" },
           { text: "🔒 Cybersécurité", action: "security" },
