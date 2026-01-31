@@ -222,7 +222,7 @@ class PhoenixChatbot {
                 const height = 650;
                 const left = (screen.width - width) / 2;
                 const top = (screen.height - height) / 2;
-                window.open('https://calendly.com/ethanbernier', '_blank', `width=${width},height=${height},left=${left},top=${top},scrollbars=yes`);        break;
+                window.open('https://calendly.com/ethanbernier/nouveau-creneau', '_blank', `width=${width},height=${height},left=${left},top=${top},scrollbars=yes`);        break;
       case 'question':
         this.showQuickReplies([
           { text: "⚡ Services IA", action: "AI" },
