@@ -218,12 +218,13 @@ class PhoenixChatbot {
       case 'booking':
         this.addBotMessage("Excellent ! Je vous redirige vers notre système de réservation. 📅");
         setTimeout(() => {
-                window.open('https://calendly.com/ethanbernier/nouveau-creneau', '_blank');        
+                window.open('https://calendly.com/ethanbernier/nouveau-creneau/', '_blank');        
                 }, 1500);
         break;
-            window.open('https://calendly.com/ethanbernier/nouveau-creneau', '_blank');    
+            window.open('https://calendly.com/ethanbernier/nouveau-creneau/', '_blank');    
         break;
       case 'question':
+        this.addBotMessage("Je suis là pour répondre à vos questions ! Que souhaitez-vous savoir ?");
         this.showQuickReplies([
           { text: "⚡ Services IA", action: "AI" },
           { text: "⚡ Cybersécurité", action: "security" },
