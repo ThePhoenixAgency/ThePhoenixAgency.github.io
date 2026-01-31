@@ -145,18 +145,29 @@ class PhoenixChatbot {
   addUserMessage(text) {
     const messagesDiv = document.getElementById('chatbotMessages');
 
-    const messageHTML = `
-      <div class="chatbot-message user">
-        <div class="message-content">${text}</div>
-        <div class="message-avatar">
+    // Create message container
+    const messageDiv = document.createElement('div');
+    messageDiv.className = 'chatbot-message user';
+
+    // Create content div with user text as textContent (prevents HTML interpretation)
+    const contentDiv = document.createElement('div');
+    contentDiv.className = 'message-content';
+    contentDiv.textContent = text;
+
+    // Create avatar div with static SVG markup
+    const avatarDiv = document.createElement('div');
+    avatarDiv.className = 'message-avatar';
+    avatarDiv.innerHTML = `
           <svg viewBox="0 0 24 24">
             <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
           </svg>
-        </div>
-      </div>
-    `;
+        `;
 
-    messagesDiv.insertAdjacentHTML('beforeend', messageHTML);
+    // Assemble message
+    messageDiv.appendChild(contentDiv);
+    messageDiv.appendChild(avatarDiv);
+
+    messagesDiv.appendChild(messageDiv);
     this.scrollToBottom();
     this.messages.push({ type: 'user', text });
   }
