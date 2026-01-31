@@ -74,7 +74,7 @@ class PhoenixChatbot {
       notification.style.display = 'none';
 
       if (this.messages.length === 0) {
-        this.addBotMessage("Bonjour ! 👋 Je suis l'assistant de The Phoenix Agency. Comment puis-je vous aider aujourd'hui ?");
+        this.addBotMessage("Bonjour ! 👋 Je suis l'assistant de ThePhoenixAgency. Comment puis-je vous aider aujourd'hui ?");
         this.showQuickReplies([
           { text: "📅 Prendre RDV", action: "booking" },
           { text: "💬 Poser une question", action: "question" },
@@ -218,18 +218,21 @@ class PhoenixChatbot {
       case 'booking':
         this.addBotMessage("Excellent ! Je vous redirige vers notre système de réservation. 📅");
         setTimeout(() => {
-                window.open('https://calendly.com/your-link', '_blank', 'width=600,height=700,scrollbars=yes');        }, 1500);
+                window.open('https://calendly.com/ethanbernier', '_blank', 'width=600,height=650,scrollbars=yes');        }, 1500);
         break;
-            window.open('https://calendly.com/ethanbernier/', '_blank');      case 'question':
+            window.open('https://calendly.com/ethanbernier/', '_blank');      
+      case 'question':
         this.showQuickReplies([
-          { text: "🤖 Services IA", action: "ia" },
-          { text: "🔒 Cybersécurité", action: "security" },
-          { text: "⚡ Automatisation", action: "automation" }
+          { text: "⚡ Services IA", action: "AI" },
+          { text: "⚡ Cybersécurité", action: "security" },
+          { text: "⚡ Automatisation", action: "automation" },
+          { text: "⚡ Courses", action: "courses" },
+          { text: "⚡ Business Analyse", action: "Business Analysis" }
         ]);
         break;
 
       case 'services':
-        this.addBotMessage("Nous proposons :\n• Intelligence Artificielle\n• Solutions NoCode\n• Automatisation\n• Cybersécurité\n• Business Analyse\n\nQuel service vous intéresse ?");
+        this.addBotMessage("Nous proposons :\n• Intelligence Artificielle\n• Solutions NoCode\n• Automatisation\n• Cybersécurité\n• \n• Cours Business Analyse\n\nQuel service vous intéresse ?");
         break;
     }
   }
