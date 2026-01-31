@@ -29,7 +29,7 @@ class PhoenixChatbot {
       <!-- Fenêtre du chatbot -->
       <div class="chatbot-window" id="chatbotWindow">
         <div class="chatbot-header">
-          <h3 data-i18n="chatbot.title">Assistant de Phoenix</h3>
+          <h3 data-i18n="chatbot.title">Assistant Phoenix</h3>
           <button class="chatbot-close" id="chatbotClose">
             <svg viewBox="0 0 24 24">
               <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
@@ -74,7 +74,7 @@ class PhoenixChatbot {
       notification.style.display = 'none';
 
       if (this.messages.length === 0) {
-        this.addBotMessage("Bonjour ! 👋 Je suis l'assistant de Phoenix. Comment puis-je vous aider aujourd'hui ?");
+        this.addBotMessage("Bonjour ! 👋 Je suis l'assistant de The Phoenix Agency. Comment puis-je vous aider aujourd'hui ?");
         this.showQuickReplies([
           { text: "📅 Prendre RDV", action: "booking" },
           { text: "💬 Poser une question", action: "question" },
@@ -145,29 +145,18 @@ class PhoenixChatbot {
   addUserMessage(text) {
     const messagesDiv = document.getElementById('chatbotMessages');
 
-    // Create message container
-    const messageDiv = document.createElement('div');
-    messageDiv.className = 'chatbot-message user';
-
-    // Create content div with user text as textContent (prevents HTML interpretation)
-    const contentDiv = document.createElement('div');
-    contentDiv.className = 'message-content';
-    contentDiv.textContent = text;
-
-    // Create avatar div with static SVG markup
-    const avatarDiv = document.createElement('div');
-    avatarDiv.className = 'message-avatar';
-    avatarDiv.innerHTML = `
+    const messageHTML = `
+      <div class="chatbot-message user">
+        <div class="message-content">${text}</div>
+        <div class="message-avatar">
           <svg viewBox="0 0 24 24">
             <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
           </svg>
-        `;
+        </div>
+      </div>
+    `;
 
-    // Assemble message
-    messageDiv.appendChild(contentDiv);
-    messageDiv.appendChild(avatarDiv);
-
-    messagesDiv.appendChild(messageDiv);
+    messagesDiv.insertAdjacentHTML('beforeend', messageHTML);
     this.scrollToBottom();
     this.messages.push({ type: 'user', text });
   }
@@ -218,24 +207,20 @@ class PhoenixChatbot {
       case 'booking':
         this.addBotMessage("Excellent ! Je vous redirige vers notre système de réservation. 📅");
         setTimeout(() => {
-                window.open('https://calendly.com/ethanbernier/nouveau-creneau/', '_blank');        
-                }, 1500);
+          window.open('https://calendly.com/your-link', '_blank');
+        }, 1500);
         break;
-            window.open('https://calendly.com/ethanbernier/nouveau-creneau/', '_blank');    
-        break;
-      case 'question':
+            window.open('https://calendly.com/ethanbernier/', '_blank');      case 'question':
         this.addBotMessage("Je suis là pour répondre à vos questions ! Que souhaitez-vous savoir ?");
         this.showQuickReplies([
-          { text: "⚡ Services IA", action: "AI" },
-          { text: "⚡ Cybersécurité", action: "security" },
-          { text: "⚡ Automatisation", action: "automation" },
-          { text: "⚡ Courses", action: "courses" },
-          { text: "⚡ Business Analyse", action: "Business Analysis" }
+          { text: "🤖 Services IA", action: "ia" },
+          { text: "🔒 Cybersécurité", action: "security" },
+          { text: "⚡ Automatisation", action: "automation" }
         ]);
         break;
 
       case 'services':
-        this.addBotMessage("Nous proposons :\n• Intelligence Artificielle\n• Solutions NoCode\n• Automatisation\n• Cybersécurité\n• \n• Cours Business Analyse\n\nQuel service vous intéresse ?");
+        this.addBotMessage("Nous proposons :\n• Intelligence Artificielle\n• Solutions NoCode\n• Automatisation\n• Cybersécurité\n• Business Analyse\n\nQuel service vous intéresse ?");
         break;
     }
   }
